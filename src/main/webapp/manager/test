@@ -1,0 +1,19 @@
+<li>
+                    <label for="select" class="l_f">
+                        <SELECT id="select">
+                            <OPTION value="1">全部</OPTION>
+                            <OPTION value="2">编号</OPTION>
+                            <OPTION value="3">类型</OPTION>
+                            <OPTION value="4">名称</OPTION>
+                        </SELECT>
+                    </label>
+                </li>
+
+
+                <style type="text/css">
+                        #wrap {
+                            width: 720px;
+                            margin: 0 auto;
+                            border: 1px;
+                        }
+                    </style>

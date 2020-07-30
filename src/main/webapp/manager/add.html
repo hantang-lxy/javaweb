@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/PIE_IE678.js"></script>
+    <![endif]-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="assets/css/codemirror.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/ace.min.css"/>
+    <link rel="stylesheet" href="Widget/zTree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css"/>
+    <![endif]-->
+    <link href="Widget/icheck/icheck.css" rel="stylesheet" type="text/css"/>
+    <link href="Widget/webuploader/0.1.5/webuploader.css" rel="stylesheet" type="text/css"/>
+
+    <title>添加商品</title>
+</head>
+<body>
+<div class="clearfix" id="add_picture">
+    <div id="scrollsidebar" class="left_Treeview">
+        <div class="show_btn" id="rightArrow"><span></span></div>
+        <div class="widget-box side_content">
+            <div class="side_title"><a title="隐藏" class="close_btn"><span></span></a></div>
+            <div class="side_list">
+                <div class="widget-header header-color-green2">
+                    <h4 class="lighter smaller">请在右侧>>></h4>
+                </div>
+                <div class="widget-body">
+                    <div class="widget-main padding-8">
+                        <div id="treeDemo" class="ztree" style="text-align: center">
+                            <h3 style="text-align: center;font-size: 30px">生意经</h3>
+
+                            经商不懂行，瞎子撞南墙。<br>
+                            七十二行当，商人是桥梁。<br>
+                            买卖自有大学问，<br>经营作行好文章。<br>
+                            经商能发财，市场是魔方。<br>
+                            学商全靠自用功，<br>市场就是领路人。<br>
+                            问遍千家是行家，<br>学遍百讪民经营。<br>
+                            经商要懂供其所需，<br>买卖要能投其所好。<br>
+                            替对方着想，卖的高明。<br>
+                            生意生意，要出主意。<br>
+                            鱼靠水瓜靠秧，经商要靠牌子响.<br>
+                            大生意怕跌，小生意怕歇。<br>
+                            生意无大小，做好是个宝。<br>
+                            家有万贯钱，不好开个店。<br>
+                            街头一方地，胜过十亩田。<br>
+                            守生意，不如跑生意。<br>
+                            算盘珠不拨不动，<br>生意人不跑不行。<br>
+                            旱则资舟，水则资车。<br>
+                            猪多肉贱，柴少草贵。<br>
+                            林里不卖薪，湖边不卖鱼。<br>
+                            一年可发江湖客，<br>十年难富种田人。<br>
+                            不让小利，不得大利。<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page_right_style">
+        <div class="type_title">添加商品</div>
+        <form action="" method="post" class="form form-horizontal" id="form-article-add">
+            <div class="clearfix cl">
+                <label class="form-label col-2"><span class="c-red">*</span>商品名称：</label>
+                <div class="formControls col-10"><input type="text" class="input-text" value="" placeholder=""
+                                                        id="c_name" name=""></div>
+            </div>
+            <div class=" clearfix cl">
+                <label class="form-label col-2">图片地址：</label>
+                <div class="formControls col-10"><input type="text" class="input-text" value="" placeholder=""
+                                                        id="c_url" name=""></div>
+            </div>
+            <div class=" clearfix cl">
+                <div class="Add_p_s">
+                    <label class="form-label col-2">商品分类：</label>
+                    <div class="formControls col-2"><span class="select-box">
+				<select id="c_sort" class="select">
+					<option>请选择</option>
+					<option value="10086">主板</option>
+					<option value="10000">光驱</option>
+					<option value="329897">网卡</option>
+					<option value="35062">显卡</option>
+					<option value="2306">显示器</option>
+					<option value="7749">鼠标</option>
+					<option value="3685">键盘</option>
+					<option value="38389">机箱</option>
+					<option value="2731">风扇/散热片</option>
+					<option value="2233">硬盘</option>
+					<option value="110217">内存</option>
+					<option value="38479">CPU</option>
+				</select>
+				</span></div>
+                </div>
+
+                <div class="Add_p_s">
+                    <label class="form-label col-2">商品单价：</label>
+                    <div class="formControls col-2"><input type="text" class="input-text" value="" placeholder=""
+                                                           id="c_price" name=""></div>
+                </div>
+                <div class="Add_p_s">
+                    <label class="form-label col-2">商品销量：</label>
+                    <div class="formControls col-2"><input type="text" class="input-text" value="" placeholder=""
+                                                           id="c_sales"
+                                                           name=""></div>
+                </div>
+                <div class="Add_p_s">
+                    <label class="form-label col-2">库&nbsp;&nbsp;&nbsp;&nbsp;存：</label>
+                    <div class="formControls col-2"><input type="text" class="input-text" value="" placeholder=""
+                                                           id="c_stock"
+                                                           name=""></div>
+                </div>
+
+
+            </div>
+            <div class="clearfix cl">
+                <label class="form-label col-2">产品参数：</label>
+                <div class="formControls col-10">
+                    <textarea id="c_detail1" name="" cols="" rows="" class="textarea" placeholder="直接将写好的html元素放入即可~"
+                              datatype="*10-100"
+                              dragonfly="true" nullmsg="备注不能为空！"></textarea>
+                    <p class="textarea-numberbar"><em class="textarea-length"></em>最多5000字</p>
+                </div>
+            </div>
+            <div class="clearfix cl">
+                <label class="form-label col-2">产品详情：</label>
+                <div class="formControls col-10">
+                    <textarea id="c_detail2" name="" cols="" rows="" class="textarea" placeholder="直接将写好的html元素放入即可~"
+                              datatype="*10-100"
+                              dragonfly="true" nullmsg="备注不能为空！"></textarea>
+                    <p class="textarea-numberbar"><em class="textarea-length"></em>最多5000字</p>
+                </div>
+            </div>
+            <div class="clearfix cl">
+                <label class="form-label col-2">服务保障：</label>
+                <div class="formControls col-10">
+                    <textarea id="c_detail3" name="" cols="" rows="" class="textarea" placeholder="直接将写好的html元素放入即可~"
+                              datatype="*10-100"
+                              dragonfly="true" nullmsg="备注不能为空！"></textarea>
+                    <p class="textarea-numberbar"><em class="textarea-length"></em>最多2000字</p>
+                </div>
+            </div>
+            <div class="clearfix cl">
+                <div class="Button_operation">
+                    <button onClick="addgoodssubmit()" class="btn btn-primary radius" type="submit"><i
+                            class="icon-save "></i>提交
+                    </button>
+                    <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<script src="res/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+
+    //图片验证码所在标签元素
+    function addgoodssubmit() {
+        let c_name = $('#c_name').val();
+        let c_url = $('#c_url').val();
+        let c_sort = $('#c_sort').val();
+        let c_price = $('#c_price').val();
+        let c_sales = $('#c_sales').val();
+        let c_stock = $('#c_stock').val();
+        let c_detail1 = $('#c_detail1').val();
+        let c_detail2 = $('#c_detail2').val();
+        let c_detail3 = $('#c_detail3').val();
+        $.ajax({
+            type: "post",
+            url: "http://localhost:8080/javaweb01/manager/commodity.action?methodName=addCommodity",
+            data: {
+                "c_name": c_name,
+                "c_url": c_url,
+                "c_sort": c_sort,
+                "c_price": c_price,
+                "c_sales": c_sales,
+                "c_stock": c_stock,
+                "c_detail1": c_detail1,
+                "c_detail2": c_detail2,
+                "c_detail3": c_detail3
+            },
+            dataType: "text",
+            success: function (response) {
+                if ($.trim(response) == "50001") {
+                    alert('添加失败！');
+                    $('#c_name').focus();
+                    return;
+                }
+                $('.clearfix cl').find('.input-text').val('');
+                $('.clearfix cl').find('.textarea').val('');
+                return;
+            },
+            error: function () {
+                alert("哎呦,服务器走丢了");
+            }
+        });
+
+    }
+</script>
+</body>
+</html>
