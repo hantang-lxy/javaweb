@@ -30,7 +30,7 @@
         <cglib.version>3.3.0</cglib.version>
         <commons-dbutils.varsion>1.7</commons-dbutils.varsion>
         <commons-fileupload.varsion>1.4</commons-fileupload.varsion>
-        <commons-io.varsion>2.6</commons-io.varsion>
+        <commons-io.varsion>2.7</commons-io.varsion>
         <commons-lang3.varsion>3.10</commons-lang3.varsion>
         <commons-net.varsion>3.6</commons-net.varsion>
         <dom4j.varsion>2.1.3</dom4j.varsion>
